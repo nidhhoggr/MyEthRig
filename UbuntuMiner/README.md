@@ -18,6 +18,7 @@ when something does go wrong you only have to restart the dedicated process.
 1. First Copy the files as they are located in this repo to their respective directories.
 
 2. Customize the service script configuration variables.
+
 ```bash
 MINER_NAME="miner-claymoreAMD"
 WALLET_ADDR="0x62daeFB38BD2a7996975C362e711ACCf4A56EDF3"
@@ -29,17 +30,24 @@ EMAIL="your-email"
 ```
 
 3. Enable the service and start them.
+
 `sudo systemctl enable miner-claymoreAMD`
+
 `sudo systemctl enable miner-claymoreNvidia`
+
 `sudo systemctl start miner-claymoreAMD`
+
 `sudo systemctl start miner-claymoreNvidia`
 
 4. To perform logging:
+
 `sudo screen -ls`
+
 ```
 There are screens on:
   3013.miner-claymoreAMD  (04/14/2018 02:02:13 PM)  (Detached)
   2996.miner-claymoreNvidia
 ```
+
 `sudo screen -r [process_id]`
 
