@@ -8,9 +8,6 @@
 # sudo systemctl enable claymore
 # beware of the PIDFILE location ;)
 
-# Evert Mouw <post@evert.net>
-# 2017-12-11
-
 ## Arch Linux specific
 ## installed libcurl-compat and
 ## needs env "LD_PRELOAD=libcurl.so.4.0.0"
@@ -26,7 +23,7 @@ PIDFILE="/var/run/$MINER_NAME.pid"
 BINARY="/home/prospector/claymore-dual-miner-11.6/ethdcrminer64"
 ACCOUNT="-eworker 71daf1 -epool stratum+tcp://pool-usa.ethosdistro.com:5001 -ewal $WALLET_ADDR -epsw x -epool stratum+tcp://pool-eu.ethosdistro.com:5001 -ewal $WALLET_ADDR -epsw x"
 OPTIMIZATIONS="-esm 0 -dbg -1 -wd 0 -colors 0 -allcoins 1 -allpools 1 -gser 2 -di 0,1,2,3 -mclock 2100,2100,2100,2200 -cclock 1160,1160,1160,1250 -mport 0"
-EMAIL="post@evert.net"
+EMAIL="persie.joseph@gmai.com"
 
 ## environment variables
 ## use sudo with -E or --preserve-env

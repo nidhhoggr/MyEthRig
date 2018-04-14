@@ -8,9 +8,6 @@
 # sudo systemctl enable claymore
 # beware of the PIDFILE location ;)
 
-# Evert Mouw <post@evert.net>
-# 2017-12-11
-
 ## Arch Linux specific
 ## installed libcurl-compat and
 ## needs env "LD_PRELOAD=libcurl.so.4.0.0"
