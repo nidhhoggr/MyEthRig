@@ -1,0 +1,16 @@
+[Unit]
+Description=claymore Nvidia miner
+After=network.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+WorkingDirectory=/root
+ExecStart=/home/prospector/miner-claymoreNvidia.sh start screen
+ExecStop=/home/prospector/miner-claymoreNvidia.sh stop
+TimeoutStopSec=10
+Restart=on-success
+
+[Install]
+WantedBy=multi-user.target

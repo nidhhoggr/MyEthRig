@@ -1,0 +1,16 @@
+[Unit]
+Description=claymore AMD miner
+After=network.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+WorkingDirectory=/root
+ExecStart=/home/prospector/miner-claymoreAMD.sh start screen
+ExecStop=/home/prospector/miner-claymoreAMD.sh stop
+TimeoutStopSec=10
+Restart=on-success
+
+[Install]
+WantedBy=multi-user.target
